@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<body>
+    <style>
+    div {
+        border: solid rgb(158, 250, 226) 2px;
+        /* height: 900px; */
+                  /* width: 600px; */ 
+                  text-align: center;
+                  font-size: 24px;
+      }
+      .container {
+        border-radius: 40px;
+        background-color:rgb(230, 120, 250);
+        margin: 100;
+        padding:30px;  
+        height: 340px;  
+        width: 370px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            border: 1px;
+        }
+        .pop{
+            display: flex;
+            /* align-items: flex-start; */
+            justify-content: start;
+            flex-direction:column;
+            height: 150px;
+            width: 250px;
+            /* border: 0.5px; */
+            color: rgb(159, 4, 249);
+
+        }
+        .header{
+            height: 70px;
+        }
+        .navbar{
+            height: 60px;
+            border-top: 0.5px;
+        }
+        .footer{
+            height: 30px;
+        }
+        .aside{
+            width: 120px;
+        }
+        .section{
+            height: 75px;
+            border-top: 0.5px;
+        }
+        .article{
+            height: 75px;
+        }
+        </style>
+    <div class="container">
+        <div class="header"> Header</div>
+        <div class="navbar">Navbar</div>
+        <div class="content">
+            <div class="pop">
+                <div class="section">section</div>
+                <div class="article">article</div> 
+            </div>
+            <div class="aside">aside</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro repudiandae laudantium corporis, maiores ipsa tempora recusandae atque incidunt quis?
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
